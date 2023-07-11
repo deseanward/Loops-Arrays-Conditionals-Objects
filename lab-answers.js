@@ -179,3 +179,33 @@ console.log(
 	'It was never removed due to the "sort()" method. "Volver" was "popped" from the end.'
 );
 console.log(' ');
+
+/**
+ * ****************************************************** WHERE IS WALDO
+ **********************************************
+ */
+const whereIsWaldo = [
+	['Timmy', 'Frank'],
+	'Eggbert',
+	['Lucinda', 'Jacc', 'Neff', 'Snoop'],
+	['Petunia', ['Baked Goods', 'Waldo']],
+];
+
+console.log('********** WHERE IS WALDO **********');
+console.log('Original array: ');
+console.log(`const whereIsWaldo = [
+    ["Timmy", "Frank"],"Eggbert",
+    ["Lucinda", "Jacc", "Neff", "Snoop"],
+    ["Petunia", ["Baked Goods", "Waldo"]]
+];`);
+console.log(' ');
+
+//Remove Eggbert
+whereIsWaldo.splice(1, 1);
+
+//Change "Neff" to "No One"
+whereIsWaldo[1][2] = 'No One';
+
+console.log('Updated array:');
+console.log(whereIsWaldo);
+console.log('Found: ', whereIsWaldo[2][1][1]);
