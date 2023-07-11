@@ -26,3 +26,24 @@ for (let i = 0; i <= 200; i++) {
 
 console.log(str2);
 console.log(' ');
+
+
+/**
+ * ****************************************************** FIZZ BUZZ *********************************************
+ */
+ console.log('********** FIZZ BUZZ **********');
+ let str3 = '';
+ 
+ for (let i = 1; i <= 100; i++) {
+     i % 3 === 0 && i % 5 === 0
+         ? (str3 += 'FizzBuzz, ')
+         : i % 5 === 0
+         ? (str3 += 'Buzz, ')
+         : i % 3 === 0
+         ? (str3 += 'Fizz, ')
+         : (str3 += i + ', ');
+ }
+ 
+ console.log(str3);
+ console.log(' ');
+ 
