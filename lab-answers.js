@@ -91,4 +91,17 @@ wolfy.splice(0, 1, 'Gameboy');
 console.log(wolfy);
 console.log(' ');
 
+
+/**
+ * ****************************************************** YELL AT THE NINJA TURTLES *********************************************
+ */
+ console.log('********** YELL AT THE NINJA TURTLES **********');
+ const turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+ 
+ for (let name of turtles) {
+     console.log(name.toUpperCase() + '!!!');
+ }
+ 
+ console.log(' ');
+ 
  
