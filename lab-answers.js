@@ -209,22 +209,37 @@ whereIsWaldo[1][2] = 'No One';
 console.log('Updated array:');
 console.log(whereIsWaldo);
 console.log('Found: ', whereIsWaldo[2][1][1]);
-console.log((' '));
-
+console.log(' ');
 
 /**
  * ****************************************************** EXCITED KITTEN
  **********************************************
  */
-console.log('/********** Excited Kitten **********')
-const phrases = ['...human...why you taking pictures of me?...', '...the catnip made me do it...', '...why does the red dot always get away...']
+console.log('/********** Excited Kitten **********');
+const phrases = [
+	'...human...why you taking pictures of me?...',
+	'...the catnip made me do it...',
+	'...why does the red dot always get away...',
+];
 
-for (let x = 1; x <= 20; x++ ) {
-	let r = Math.floor(Math.random()*3)
+for (let x = 1; x <= 20; x++) {
+	let r = Math.floor(Math.random() * 3);
 
-	x % 2 == 0
-		? console.log(phrases[r])
-		: console.log(x)
+	x % 2 == 0 ? console.log(phrases[r]) : console.log(x);
 }
 
-console.log(' ')
+console.log(' ');
+
+/**
+ * ****************************************************** FIND THE MEDIAN
+ **********************************************
+ */
+console.log('/********** Find the Median **********/');
+const nums = [
+	14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18, 12,
+	17, 12, 71, 18, 15, 12,
+];
+
+let median = Math.floor(nums.length / 2);
+
+console.log(nums[median]);
